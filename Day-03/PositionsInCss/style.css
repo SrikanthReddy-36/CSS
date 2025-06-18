@@ -1,0 +1,68 @@
+.container{
+    width: 1500px;
+    height: 800px;
+    position: relative;
+}
+img{
+    width: 100%;
+}
+    
+span{
+    background-color: rgba(0, 0, 0, 0.718);
+    color: white;
+    padding: 15px;
+    margin: 10px;
+}
+h3{
+    color: white;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    position: absolute;
+    top: 357px;
+    right: 643px;
+}
+h2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.maincontainer{
+
+    width: 1500px;
+    height: 800px;
+    /* padding: 10px; */
+    /* border: 2px solid black; */
+}
+.container-1,.container-2{
+    width: 1500px;
+    height: 250px;
+    /* border: 2px solid black; */
+}
+.child-1,.child-2,.child-3,.child-4{
+    display: inline-block;
+    position: relative;
+    width: 348px;
+    margin: 10px;
+    /* border: 2px solid black; */
+}
+img{
+    width: 100%;
+}
+.class-1,.class-2,.class-3,.class-4{
+    display: inline-block;
+    position: relative;
+    width: 348px;
+    margin: 10px;
+    /* border: 2px solid black; */
+}
+p{
+    background-color: black;
+  color: white;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  margin: 0;
+  font-size: 16.5px;
+  font-family: Verdana, sans-serif;
+}
