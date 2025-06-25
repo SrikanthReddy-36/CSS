@@ -1,0 +1,13 @@
+.continer{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.child-1{
+    display: flex   ;
+    background-color: black;
+    color: white;
+    gap: 10px;
+    border: 2px solid red;
+
+}

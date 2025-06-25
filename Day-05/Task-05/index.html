@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+      body {
+        font-family: "Times New Roman", sans-serif;
+        padding: 60px;
+      }
+      .field-wrapper {
+        max-width: 90%;
+        margin: auto;
+        margin-left: 0px;
+        padding-bottom: 30px;
+      }
+      .clickable-label {
+        border-bottom: 1px solid #ccc;
+        display: inline-block;
+        font-size: 15px;
+        color: #555;
+        cursor: pointer;
+        padding: 5px 0;
+        width: 100%;
+      }
+      .input-box {
+        margin-top: 10px;
+        display: none;
+        animation: fadeIn 0.4s ease-in-out;
+      }
+      input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #999;
+        border-radius: 4px;
+        font-size: 20px;
+      }   
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .submit-btn {
+        display: block;
+        margin-top: 20px;
+        background-color: rgb(241, 241, 241);
+        color: black;
+        padding: 10px 20px;
+        font-family: "Times New Roman", sans-serif;
+        font-size: 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      function showInputBox(id) {
+        document.getElementById(id + "Text").style.display = "none";
+        document.getElementById(id + "InputBox").style.display = "block";
+        document.getElementById(id + "InputField").focus();
+      }
+      
+      function validateForm() {
+        const name = document.getElementById("nameInputField").value.trim();
+        const people = document.getElementById("peopleInputField").value.trim();
+        const date = document.getElementById("dateInputField").value.trim();
+        const message = document.getElementById("messageInputField").value.trim();
+        
+        if (!name || !people || !date || !message) {
+          alert("Please fill in all fields before submitting.");
+          return false;
+        }
+        alert("Form submitted successfully!");
+        return true;
+      }
+    </script>
+    
+  </head>
+  <body>
+    
+    <div class="maincontainer">
+        <div class="container">
+            <h3>Gourmet au Catering</h3>
+        </div>
+        <div class="child-1">
+            
+            <h3>About</h3>
+        </div>
+        <div class="child-2">
+            <h3>Menu</h3>
+            
+        </div>
+        <div class="child-3">
+            <h3>Contact</h3>
+  
+        </div>
+    </div>
+  </body>
+  <body>
+    <div class="container-1">
+        <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="">
+            <h1>Le Catering</h1>
+    </div>
+    <div class="maincontainer-2">
+         <div class="container-2">
+            <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="">
+        </div>
+        <div class="container-3">
+            <div class="class-1">
+                <h1>About Catering</h1>
+            </div>
+            <div class="class-2">
+                <h3>Tradition since 1889</h3>
+            </div>
+            <div class="class-3">
+                <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+         </div> 
+    </div>
+    <div class="box">
+        <div class="kid-1">
+            <div class="k-1">
+                <h1>Our Menu</h1>
+            </div>
+            <div class="k-2">
+                <h3>Bread Basket</h3>
+                <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+            </div>
+            <div class="k-3">
+                <h3>Honey Almond Granola with Fruits</h3>
+                <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+            </div>
+            <div class="k-4">
+                <h3>Belgian Waffle</h3>
+                <p>Vanilla flavored batter with malted flour 7.50</p>
+            </div>
+            <div class="k-5">
+                <h3>Scrambled eggs</h3>
+                <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+            </div>
+            <div class="k-6">
+                <h3>Blueberry Pancakes</h3>
+                <p>With syrup, butter and lots of berries 8.50</p>
+            </div>
+        </div> 
+            <div class="kid-2">
+               <img src="https://www.w3schools.com/w3images/tablesetting.jpg" alt="">
+           </div>
+    </div>
+    <div class="box-2">
+        <div class="cls-1">
+            <h1>Contact</h1>
+        </div>
+        <div class="cls-2">
+            <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p><p>Do not hesitate to contact us.</p>
+        </div>
+        <div class="cls-3">
+            <h4>Catering Service, 42nd Living St, 43043 New York, NY</h4>
+        </div>
+        <div class="cls-4">
+            <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+        </div>
+
+
+        <form onsubmit="return validateForm()">
+      <div class="field-wrapper">
+        <div id="nameText" class="clickable-label" onclick="showInputBox('name')">Name</div>
+        <div id="nameInputBox" class="input-box">
+          <input type="text" id="nameInputField" placeholder="Name">
+        </div>
+      </div>
+    
+      <div class="field-wrapper">
+        <div id="peopleText" class="clickable-label" onclick="showInputBox('people')">How many people</div>
+        <div id="peopleInputBox" class="input-box">
+          <input type="number" id="peopleInputField" placeholder="How many people" min="1">
+        </div>
+      </div>
+    
+      <div class="field-wrapper">
+        <div id="dateText" class="clickable-label" onclick="showInputBox('date')">11/16/2020 08:00 PM</div>
+        <div id="dateInputBox" class="input-box">
+          <input type="datetime-local" id="dateInputField" value="2020-11-16T20:00">
+        </div>
+      </div>
+    
+      <div class="fiel  d-wrapper">
+        <div id="messageText" class="clickable-label" onclick="showInputBox('message')">Message \ Special requirements</div>
+        <div id="messageInputBox" class="input-box">
+          <textarea id="messageInputField" rows="3" placeholder="Message / Special requirements"></textarea>
+        </div>
+      </div>
+    
+      <button type="submit" class="submit-btn">SEND MESSAGE</button>
+    </form>
+    </div>
+</html>
